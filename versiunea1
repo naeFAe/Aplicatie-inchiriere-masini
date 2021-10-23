@@ -1,0 +1,134 @@
+#include <string>
+
+class masina{
+    std::string culoare;
+    std::string nrEn;
+    int capacitate;
+    std::string marca;
+    std::string model;
+    std::string tarifOra;
+    std::string tarifZi;
+public:
+    masina(const std::string &culoare, const std::string &nrEn, int capacitate, const std::string &marca,
+           const std::string &model, const std::string &tarifOra, const std::string &tarifZi) : culoare(culoare), nrEn(nrEn),capacitate(capacitate),marca(marca),
+                                                                                                model(model),tarifOra(tarifOra),tarifZi(tarifZi) {}
+
+    const std::string &getCuloare() const {
+        return culoare;
+    }
+
+    void setCuloare(const std::string &culoare) {
+        masina::culoare = culoare;
+    }
+
+    const std::string &getNrEn() const {
+        return nrEn;
+    }
+
+    void setNrEn(const std::string &nrEn) {
+        masina::nrEn = nrEn;
+    }
+
+    int getCapacitate() const {
+        return capacitate;
+    }
+
+    void setCapacitate(int capacitate) {
+        masina::capacitate = capacitate;
+    }
+
+    const std::string &getMarca() const {
+        return marca;
+    }
+
+    void setMarca(const std::string &marca) {
+        masina::marca = marca;
+    }
+
+    const std::string &getModel() const {
+        return model;
+    }
+
+    void setModel(const std::string &model) {
+        masina::model = model;
+    }
+
+    const std::string &getTarifOra() const {
+        return tarifOra;
+    }
+
+    void setTarifOra(const std::string &tarifOra) {
+        masina::tarifOra = tarifOra;
+    }
+
+    const std::string &getTarifZi() const {
+        return tarifZi;
+    }
+
+    void setTarifZi(const std::string &tarifZi) {
+        masina::tarifZi = tarifZi;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const masina &masina) {
+        os << "culoare: " << masina.culoare << " nrEn: " << masina.nrEn << " capacitate: " << masina.capacitate
+           << " marca: " << masina.marca << " model: " << masina.model << " tarifOra: " << masina.tarifOra
+           << " tarifZi: " << masina.tarifZi;
+        return os;
+    }
+    masina(const masina& copie):culoare(copie.culoare), nrEn(copie.nrEn), capacitate(copie.capacitate),marca(copie.marca),model(copie.model),
+                                                                            tarifOra(copie.tarifOra),tarifZi(copie.tarifZi){
+        std::cout<<"in constructor de copiere";
+    }
+
+};
+class client{
+    int id;
+    std::string nume;
+    int nrTel;
+    std::string adrresa;
+public:
+    client(int id, const std::string &nume, int nrTel, const std::string &adrresa) : id(id), nume(nume), nrTel(nrTel),
+                                                                                     adrresa(adrresa) {}
+
+    int getId() const {
+        return id;
+    }
+
+    void setId(int id) {
+        client::id = id;
+    }
+
+    const std::string &getNume() const {
+        return nume;
+    }
+
+    void setNume(const std::string &nume) {
+        client::nume = nume;
+    }
+
+    int getNrTel() const {
+        return nrTel;
+    }
+
+    void setNrTel(int nrTel) {
+        client::nrTel = nrTel;
+    }
+
+    const std::string &getAdrresa() const {
+        return adrresa;
+    }
+
+    void setAdrresa(const std::string &adrresa) {
+        client::adrresa = adrresa;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const client &client) {
+        os << "id: " << client.id << " nume: " << client.nume << " nrTel: " << client.nrTel << " adrresa: "
+           << client.adrresa;
+        return os;
+    }
+};
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
