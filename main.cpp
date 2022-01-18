@@ -37,7 +37,7 @@ int main() {
     muncitor m2 = muncitor("sava","alex","barbat",2);
     m2.calc_salariu();
     manager man3 = manager("vasile","alexandru","barbat");
-    agent_inchirieri a2 =agent_inchirieri("ilile","oana","barbat",6);
+    agent_inchirieri a2 =agent_inchirieri("ilile","oana","barbat",10);
     man3.adauga2(a1);
     man3.adauga2(a2);
     man3.calc_salariu();
