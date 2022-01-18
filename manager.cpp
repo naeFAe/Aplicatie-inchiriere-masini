@@ -4,7 +4,6 @@
 #include "agent_inchirieri.h"
 
 
-
 manager::manager(const std::string &nume, const std::string &prenume, const std::string &gen) : angajat(nume, prenume, gen) {}
 
 void manager::print(std::ostream &out) const {

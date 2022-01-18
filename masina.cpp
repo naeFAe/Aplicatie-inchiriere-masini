@@ -1,11 +1,17 @@
 
 
 #include "masina.h"
-
+#include "erori_masina.h"
+#include <string>
 masina::masina(const std::string &marca, const std::string &model, const std::string &culoare, int nrInmatriculare,
                const std::string &capacitate, int tarifOra) : marca(marca), model(model), culoare(culoare),
                                                               nrInmatriculare(nrInmatriculare), capacitate(capacitate),
-                                                              tarifOra(tarifOra) {}
+                                                              tarifOra(tarifOra) {
+    if(tarifOra == 0)
+        throw eroare_tarif();
+    if(nrInmatriculare < 3)
+        throw eroare_nr_inmatriculare();
+}
 
 void masina::setNrInmatriculare1(int nrInmatriculare) {
     masina::nrInmatriculare = nrInmatriculare;
