@@ -1,0 +1,3 @@
+C:/Users/Steff/CLionProjects/Aplicatie-inchiriere-masini/cmake-build-debug/CMakeFiles/Aplicatie_inchiriere_masini.dir
+C:/Users/Steff/CLionProjects/Aplicatie-inchiriere-masini/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Steff/CLionProjects/Aplicatie-inchiriere-masini/cmake-build-debug/CMakeFiles/rebuild_cache.dir

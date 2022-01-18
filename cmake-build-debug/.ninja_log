@@ -1,0 +1,14 @@
+# ninja log v5
+6	481	6642127548449910	CMakeFiles/Aplicatie_inchiriere_masini.dir/agent_inchirieri.cpp.obj	1bb080bc01d5c10f
+8	536	6642041424244906	CMakeFiles/Aplicatie_inchiriere_masini.dir/muncitor.cpp.obj	bf24af2f6ef128b3
+16	411	6641636057411714	CMakeFiles/Aplicatie_inchiriere_masini.dir/angajat.cpp.obj	5814be6a6a515f94
+2	370	6642127547342611	CMakeFiles/Aplicatie_inchiriere_masini.dir/masina.cpp.obj	355949ee98addca7
+3	465	6642041820268386	CMakeFiles/Aplicatie_inchiriere_masini.dir/main.cpp.obj	4948391e9f2674df
+1	236	6642128883066883	build.ninja	34449a47d4f188e7
+2	393	6642041422788536	CMakeFiles/Aplicatie_inchiriere_masini.dir/client.cpp.obj	e88afe0f4c6135e9
+9	548	6642127549108162	CMakeFiles/Aplicatie_inchiriere_masini.dir/manager.cpp.obj	202391203afd0f77
+4	638	6642041425252293	CMakeFiles/Aplicatie_inchiriere_masini.dir/aplicatie.cpp.obj	199d1b775357ea2d
+465	643	6642041822013709	Aplicatie_inchiriere_masini.exe	611e6e6690d7a677
+0	129	6642128883066883	build.ninja	34449a47d4f188e7
+2	214	6642128885590145	CMakeFiles/Aplicatie_inchiriere_masini.dir/eroare_agent_inchirieri.cpp.obj	a6a114113c61421f
+214	357	6642128886986408	Aplicatie_inchiriere_masini.exe	8034144f38bcdbdb
