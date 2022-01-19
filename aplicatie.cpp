@@ -1,11 +1,11 @@
 
 #include "aplicatie.h"
 
-aplicatie1::aplicatie1(const std::vector<int> &statusInchirieri, const std::vector<struct client> &clienti,
+aplicatie1::aplicatie1(const std::vector<int> &statusInchirieri, const std::vector<struct client<int>> &clienti,
                        const std::vector<struct masina> &masini) : status_inchirieri(statusInchirieri), clienti(clienti),
                                                                    masini(masini) {}
 
-void aplicatie1::set_masina_client(class client& client) {//inlocuieste masina introdusa initial cu o masina introdusa de client la tstatura
+void aplicatie1::set_masina_client(class client<int>& client) {//inlocuieste masina introdusa initial cu o masina introdusa de client la tstatura
     int x=1;//o vaaribila care primeste valoarea 1 si verifica daca clientul vrea sa inchirieze mai multe masini
     while(x==1){
         std::cout << client.getUser() << "\n\n";
@@ -47,7 +47,7 @@ void aplicatie1::adauga_status(const int &status) {
     status_inchirieri.push_back(status);
 }
 
-void aplicatie1::adauga_client(const class client& client) {
+void aplicatie1::adauga_client(const class client<int>& client) {
     clienti.push_back(client);
 }
 
@@ -58,3 +58,10 @@ void aplicatie1::adauga_masina(const class masina& masina) {
 void aplicatie1::setMasini(const std::vector<struct masina> &masini) {
     aplicatie1::masini = masini;
 }
+
+aplicatie1 *aplicatie1::get_app() {
+    if(app == nullptr){ app = new aplicatie1;}
+    return app;
+}
+
+aplicatie1* aplicatie1::app = nullptr;

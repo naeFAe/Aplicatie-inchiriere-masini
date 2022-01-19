@@ -1,4 +1,0 @@
-nume: 
-prenume: 
-gen: 
-numar contracte: 1
